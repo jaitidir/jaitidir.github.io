@@ -1,0 +1,72 @@
+<style>
+  .courses {
+    font-size: 0.92rem;
+  }
+
+  .courses .year {
+    font-size: 1.35rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .courses .course-item {
+    padding: 0.65rem 0.85rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .courses .course-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .courses .course-meta {
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .courses .course-meta span {
+    margin-right: 0.5rem;
+  }
+
+  .courses .course-description {
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+
+  .courses .course-description p {
+    margin-bottom: 0.25rem;
+  }
+</style>
+
+
+{% if site.teachings %}
+  <div class="courses">
+    {% assign courses_by_year = site.teachings | sort: 'year' | reverse | group_by: 'year' %}
+
+    {% for year_group in courses_by_year %}
+      <h2 class="year">{{ year_group.name }}</h2>
+      <div class="course-list">
+        {% assign year_courses = year_group.items | sort: 'term' %}
+        {% for course in year_courses %}
+          <div class="course-item">
+            <h3 class="course-title">
+              <a href="{% if course.redirect %}{{ course.redirect }}{% else %}{{ course.url | relative_url }}{% endif %}">{{ course.title }}</a>
+            </h3>
+
+            <div class="course-meta">
+              {% if course.term %}
+                <span class="course-term">{{ course.term }}</span>
+              {% endif %}
+
+              {% if course.instructor %}
+                <span class="course-instructor">{{ course.instructor }}</span>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>No courses available yet.</p>
+{% endif %}

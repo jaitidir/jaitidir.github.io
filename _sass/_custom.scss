@@ -1,0 +1,77 @@
+/* ============================================
+   Custom color overrides
+   ============================================ */
+
+
+/* Light mode */
+html[data-theme="light"] {
+  --global-bg-color: #f7f9fc;
+  --global-text-color: #222;
+}
+
+/* Dark mode */
+html[data-theme="dark"] {
+  --global-bg-color: #161b22;
+  --global-text-color: #e8edf2;
+}
+
+/* Default state */
+#light-toggle,
+#light-toggle i {
+  color: inherit !important;
+}
+
+/* Hover state */
+#light-toggle:hover,
+#light-toggle:hover i {
+  color: #0057b8 !important; /* light mode hover */
+}
+
+html[data-theme="dark"] #light-toggle:hover,
+html[data-theme="dark"] #light-toggle:hover i {
+  color: #6cb6ff !important; /* dark mode hover */
+}
+
+/* Clicked/pressed state */
+#light-toggle:active,
+#light-toggle:active i {
+  color: #0057b8 !important;
+}
+
+html[data-theme="dark"] #light-toggle:active,
+html[data-theme="dark"] #light-toggle:active i {
+  color: #6cb6ff !important;
+}
+
+/* Light mode */
+html[data-theme="light"] a:hover,
+html[data-theme="light"] a:focus {
+  color: #00408a !important;   /* or any color you like */
+}
+
+/* Dark mode */
+html[data-theme="dark"] a:hover,
+html[data-theme="dark"] a:focus {
+  color: #8cc8ff !important;   /* or any color you like */
+}
+
+/* Light mode */
+html[data-theme="light"] {
+  --global-theme-color: #0057b8;
+}
+
+/* Dark mode */
+html[data-theme="dark"] {
+  --global-theme-color: #6cb6ff;
+}
+
+/* Make visited links the same color */
+a:link,
+a:visited {
+  color: var(--global-theme-color);
+}
+
+/* Hover color */
+a:hover {
+  color: #003f8a;
+}
