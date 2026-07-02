@@ -15,12 +15,38 @@ Finally, we provide a brief introduction to superstring theory, which offers a m
 
 If you want to read it completely you can find it below:
 
-<div style="width:100%; height:630px;">
+<div class="pdf-container">
   <iframe
     src="{{ '/assets/pdf/cuerdas.pdf' | relative_url }}"
     width="100%"
-    height="100%"
+    height="630"
     style="border:none;"
     loading="lazy">
   </iframe>
 </div>
+
+<div class="pdf-mobile">
+  <a class="btn btn-primary"
+     href="{{ '/assets/pdf/cuerdas.pdf' | relative_url }}"
+     target="_blank">
+    📄 Open PDF
+  </a>
+</div>
+
+<style>
+.pdf-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .pdf-container {
+    display: none;
+  }
+
+  .pdf-mobile {
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+  }
+}
+</style>
