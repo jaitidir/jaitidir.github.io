@@ -4,7 +4,12 @@
     height: 150px;      /* Change this value to your preferred height */
     object-fit: cover;  /* Crops the image instead of stretching it */
   }
+  .projects .card-title {
+  font-family: "Georgia", serif;
+}
 </style>
+
+
 
 <div class="col">
   <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">

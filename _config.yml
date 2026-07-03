@@ -8,8 +8,9 @@ middle_name:
 last_name: Ait Idir Lahuerta
 contact_note: >
   Contact: jesus.aitidirlahuerta@maths.ox.ac.uk
-description: >
-footer_text: © 2026 Jesus Ait Idir Lahuerta
+description: > 
+  Website of Jesus Ait Idir, PhD student at University of Oxford.
+footer_text: >
 keywords: applied-mathematics, mathematical-biology, biology, research, teaching, oxford
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -425,7 +426,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
   widths:
     - 480
     - 800

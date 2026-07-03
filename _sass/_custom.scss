@@ -1,6 +1,105 @@
 /* ============================================
    Custom color overrides
    ============================================ */
+/* ===========================
+   Large screens (>1200px)
+   =========================== */
+@media (min-width: 1200px) {
+
+  .container {
+    max-width: 1150px;
+  }
+
+  .profile img {
+    max-width: 320px;
+    height: auto;
+  }
+
+  .projects .card {
+    max-width: 340px;
+  }
+}
+
+/* ===========================
+   Tablets
+   =========================== */
+@media (max-width: 1199px) {
+
+  .container {
+    max-width: 95%;
+  }
+
+  .profile img {
+    max-width: 260px;
+  }
+
+  .projects .card {
+    max-width: 100%;
+  }
+}
+
+/* ===========================
+   Phones
+   =========================== */
+@media (max-width: 768px) {
+
+  .container {
+    max-width: 96%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .profile {
+    float: none !important;
+    margin: 0 auto 1.5rem auto !important;
+    text-align: center;
+  }
+
+  .profile img {
+    margin-left: 0 !important;
+    max-width: 180px;
+    height: auto;
+  }
+
+  .post-title {
+    font-size: 1.3rem !important;
+  }
+
+  .projects .card {
+    max-width: 100%;
+  }
+
+  .publications .links .btn,
+  .publications abbr.badge {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.45rem;
+  }
+
+  .courses .course-title {
+    font-size: 0.9rem;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main,
+.wrapper,
+.container {
+  flex: 1;
+}
+
+a:hover img[alt*="linkedin"] {
+  opacity: 0.85;
+}
 
 /* Wider layout on phones */
 @media (max-width: 1000px) {

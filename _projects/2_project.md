@@ -1,6 +1,6 @@
 ---
 layout: page
-title: solar panels
+title: Solar panels
 description:
 img: assets/img/4.jpg
 importance: 2
@@ -31,7 +31,7 @@ Additionally, the use of the MPPT algorithm (Maximum Power Point Tracking) is pr
     </div>
 </div>
 <div class="caption">
-    MPPT algorithm scheme based on https://www.researchgate.net/figure/Perturb-Observe-flowchart_fig1_277339128 and results for noisy temperature.
+    MPPT algorithm scheme and results for noisy temperature, based on <a>https://www.researchgate.net/figure/Perturb-Observe-flowchart_fig1_277339128</a>.
 </div>
 
 Our solution for this problem was the winner at the International Modelling Contest organised by the Complutense University of Madrid! If you want to read it completely you can find it below:

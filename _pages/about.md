@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='https://www.maths.ox.ac.uk/people/jesus.aitidirlahuerta'>Mathematical Institute, University of Oxford</a>.
 
@@ -9,8 +9,9 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Office S2.05</p>
-    <p>Mathematical Institute University of Oxford</p>
+    <p>Office S2.05</p><br>
+    <p>Mathematical Institute</p> <br>
+    <p>University of Oxford</p><br>
     <p>OX2 6GG</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -51,7 +52,7 @@ I am very interested in the micro-to-macro picture and in understanding the limi
      target="_blank"
      style="color: var(--global-theme-color) !important;">
      <strong>María Cristina Masaveu Peterson Scholarship</strong>
-  </a> (2023–25)
+  </a> (2023–2025)
 
 ###### Journal reviewer
 

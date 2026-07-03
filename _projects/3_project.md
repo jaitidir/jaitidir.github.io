@@ -1,6 +1,6 @@
 ---
 layout: page
-title: string theory
+title: String theory
 description: 
 img: assets/img/10.jpg
 importance: 3
